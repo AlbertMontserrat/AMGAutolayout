@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AMGAutolayout_Example' do
+  pod 'AMGAutolayout', :path => '../'
+
+  target 'AMGAutolayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

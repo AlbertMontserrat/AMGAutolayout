@@ -1,0 +1,29 @@
+# AMGAutolayout
+
+[![CI Status](https://img.shields.io/travis/AlbertMontserrat/AMGAutolayout.svg?style=flat)](https://travis-ci.org/AlbertMontserrat/AMGAutolayout)
+[![Version](https://img.shields.io/cocoapods/v/AMGAutolayout.svg?style=flat)](https://cocoapods.org/pods/AMGAutolayout)
+[![License](https://img.shields.io/cocoapods/l/AMGAutolayout.svg?style=flat)](https://cocoapods.org/pods/AMGAutolayout)
+[![Platform](https://img.shields.io/cocoapods/p/AMGAutolayout.svg?style=flat)](https://cocoapods.org/pods/AMGAutolayout)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+AMGAutolayout is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'AMGAutolayout'
+```
+
+## Author
+
+AlbertMontserrat, albert_montserrat@hotmail.com
+
+## License
+
+AMGAutolayout is available under the MIT license. See the LICENSE file for more info.
