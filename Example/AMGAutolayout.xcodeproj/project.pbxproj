@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35949C074148232786BE56E9 /* Pods_AMGAutolayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC78E623C4D7FFD62FD8B6A9 /* Pods_AMGAutolayout_Tests.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
+		5082429122B42315005AD7B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5082429022B42315005AD7B9 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -28,11 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4734283854D691D8F7C36C50 /* AMGAutolayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AMGAutolayout.podspec; path = ../AMGAutolayout.podspec; sourceTree = "<group>"; };
+		4734283854D691D8F7C36C50 /* AMGAutolayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AMGAutolayout.podspec; path = ../AMGAutolayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5082429022B42315005AD7B9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A5D2F295C5E6C46E1B7CB96 /* Pods-AMGAutolayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayout_Example.debug.xcconfig"; path = "Target Support Files/Pods-AMGAutolayout_Example/Pods-AMGAutolayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AMGAutolayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMGAutolayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -41,8 +41,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7401C03313A819A7E0F208E7 /* Pods-AMGAutolayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayout_Tests.release.xcconfig"; path = "Target Support Files/Pods-AMGAutolayout_Tests/Pods-AMGAutolayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8353BC98589AC381D4AA0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8443C4FF36B131A5D59FB51D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8353BC98589AC381D4AA0817 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8443C4FF36B131A5D59FB51D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A146194DEA2A913EFE01C504 /* Pods-AMGAutolayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AMGAutolayout_Tests/Pods-AMGAutolayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC78E623C4D7FFD62FD8B6A9 /* Pods_AMGAutolayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMGAutolayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33E437702F9B62D87AFC57B /* Pods-AMGAutolayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMGAutolayout_Example.release.xcconfig"; path = "Target Support Files/Pods-AMGAutolayout_Example/Pods-AMGAutolayout_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		607FACD21AFB9204008FA782 /* Example for AMGAutolayout */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				5082429022B42315005AD7B9 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -147,7 +147,6 @@
 				A146194DEA2A913EFE01C504 /* Pods-AMGAutolayout_Tests.debug.xcconfig */,
 				7401C03313A819A7E0F208E7 /* Pods-AMGAutolayout_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -331,8 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5082429122B42315005AD7B9 /* AppDelegate.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

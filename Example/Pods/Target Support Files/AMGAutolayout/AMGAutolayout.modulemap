@@ -1,0 +1,6 @@
+framework module AMGAutolayout {
+  umbrella header "AMGAutolayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
