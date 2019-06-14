@@ -7,19 +7,6 @@
 
 ## How it works
 
-This library follows and extends the custom DSL created by John Sundell in this post:
-
-https://www.swiftbysundell.com/posts/building-dsls-in-swift
-
-In this library there lot of additions like:
-
-* Working directly with dimension constants like `$0.height == 30`
-* Working directly with properties and get completely rid of `view.xyzAnchor`
-* Adding lofs of extension, as, for example, having the safe area with a simple `$0.top = $1.layout.safeTop`
-* Allowing multiplier with custom operators and even combine multiplier with offset to do something like `$0.height = $1.layout.height * 2 + 10`
-* Return the generated constraint even with the operators function to be able to handle next changes in the view controller. Also added as a `@discardableResult` to avoid warnings in regular usage
-* And much more...
-
 Those are some examples of what is possible to do with AMGAutolayout:
 
 ```
@@ -163,6 +150,19 @@ pod 'AMGAutolayout'
 ## Author
 
 AlbertMontserrat, albert.montserrat.gambus@gmail.com
+
+This library follows and extends the custom DSL created by John Sundell in this post:
+
+https://www.swiftbysundell.com/posts/building-dsls-in-swift
+
+In this library there's lot of additions like:
+
+* Working directly with dimension constants like `$0.height == 30`
+* Working directly with properties and get completely rid of `view.xyzAnchor`
+* Adding lofs of extension, as, for example, having the safe area with a simple `$0.top = $1.layout.safeTop`
+* Allowing multiplier with custom operators and even combine multiplier with offset to do something like `$0.height = $1.layout.height * 2 + 10`
+* Return the generated constraint even with the operators function to be able to handle next changes in the view controller. Also added as a `@discardableResult` to avoid warnings in regular usage
+* And much more...
 
 ## License
 
