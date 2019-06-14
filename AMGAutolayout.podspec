@@ -21,6 +21,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/AlbertMontserrat/AMGAutolayout.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  s.swift_versions = '4.0'
 
   s.source_files = 'AMGAutolayout/Classes/**/*'
   
