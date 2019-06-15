@@ -10,6 +10,45 @@
 Those are some examples of what is possible to do with AMGAutolayout:
 
 ```
+//With operators
+
+//Directly from layout property (this doesn't make `translatesAutoresizingMaskIntoConstraints = false`)
+secondTitleLabel.layout.top == textLabel.layout.bottom + 50
+
+//Or with makeLayout which makes `translatesAutoresizingMaskIntoConstraints = false` to the current view
+secondTitleLabel.makeLayout {
+    $0.left == titleLabel.layout.left
+    $0.right == titleLabel.layout.right - 30
+    $0.height == 50
+}
+
+secondTextLabel.makeLayout {
+    topConstraint2 = $0.top == secondTitleLabel.layout.bottom + 20
+    $0.centerX <= secondTitleLabel.layout.centerX
+    $0.width == secondTitleLabel.layout.width - 50
+    $0.height == secondTitleLabel.layout.height * 3 + 50
+}
+
+frameView.makeLayout {
+    $0.top >= secondTextLabel.layout.bottom + 20
+    $0.left == backgroundView.layout.left + 20
+    $0.right <= backgroundView.layout.right - 20
+    $0.aspectRatio(5)
+    $0.bottom == backgroundView.layout.bottom - 20
+}
+
+frameView2.makeLayout {
+    $0.centerSuperview()
+    $0.width <= 50
+    $0.height >= 20
+}
+
+frameView3.makeLayout {
+    $0.center(frameView2)
+    $0.width == 50
+    $0.height == 20
+}
+
 backgroundView.makeLayout {
     $0.fillSuperview(with: UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20), relativeToSafeArea: true)
 }
@@ -28,42 +67,6 @@ textLabel.makeLayout {
     $0.centerX.equal(to: titleLabel.layout.centerX)
     $0.width.equal(to: titleLabel.layout.width, constant: 10)
     $0.height.equal(to: titleLabel.layout.height, multiplier: 2, constant: 10)
-}
-
-//With operators
-
-secondTitleLabel.layout.top == textLabel.layout.bottom + 50
-secondTitleLabel.makeLayout {
-    $0.left == titleLabel.layout.left
-    $0.right == titleLabel.layout.right - 30
-    $0.height == 50
-}
-
-secondTextLabel.makeLayout {
-    topConstraint2 = $0.top == secondTitleLabel.layout.bottom + 20
-    $0.centerX == secondTitleLabel.layout.centerX
-    $0.width == secondTitleLabel.layout.width - 50
-    $0.height == secondTitleLabel.layout.height * 3 + 50
-}
-
-frameView.makeLayout {
-    $0.top == secondTextLabel.layout.bottom + 20
-    $0.left == backgroundView.layout.left + 20
-    $0.right == backgroundView.layout.right - 20
-    $0.aspectRatio(5)
-    $0.bottom == backgroundView.layout.bottom - 20
-}
-
-frameView2.makeLayout {
-    $0.centerSuperview()
-    $0.width == 50
-    $0.height == 20
-}
-
-frameView3.makeLayout {
-    $0.center(frameView2)
-    $0.width == 50
-    $0.height == 20
 }
 ```
 
@@ -113,14 +116,14 @@ The operators that can be used are:
 
 * property1 `==` property2
 * property1 `>=` property2 
-* property1 `>=` property2
+* property1 `<=` property2
 
 * dimensionProperty1 `==` dimensionProperty2
 * dimensionProperty1 `>=` dimensionProperty2 
-* dimensionProperty1 `>=` dimensionProperty2
+* dimensionProperty1 `<=` dimensionProperty2
 * dimensionProperty1 `==` constant
 * dimensionProperty1 `>=` constant 
-* dimensionProperty1 `>=` constant
+* dimensionProperty1 `<=` constant
 
 And for the part of `property2`  you can also do:
 

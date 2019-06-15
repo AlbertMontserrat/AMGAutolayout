@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMGAutolayout'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Lightwheight DSL for iOS Autolayout.'
 
   s.description      = <<-DESC
